@@ -1087,8 +1087,8 @@ int main(int argc, char * argv[])
     zone_deinit(&zone);
     return EXIT_SUCCESS;
 #endif
-    node_t * np = f("a+&b*c^-d");
-    //node_t * np = f("a*b-c+d*e+f");
+    //node_t * np = f("a+&b*c^-d");
+    node_t * np = f("a*b-c+d*e+f");
     print_node(np, 0);
     np = fixup(np);
     print_node(np, 0);
